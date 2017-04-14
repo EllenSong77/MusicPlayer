@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>随心音乐FM</title>
+    <link rel="stylesheet" type="text/css" href="../Css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../Css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="../Plugins/FontAwesome4.1/css/font-awesome.min.css" />
+    <script type='text/javascript' src='../Js/jquery-3.2.0.js'></script>
+    <script type='text/javascript' src='../Js/jquery.particleground.js'></script>
+    <script src="../Js/jquery-ui.js"></script>
+    <script src="../Js/tPlayer.js"></script>
+    <style>
+        body {
+            height: 100%;
+            background: #16a085;
+            overflow: hidden;
+        }
+
+        canvas {
+            z-index: -1;
+            position: absolute;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            //粒子背景特效
+            $('body').particleground({
+                dotColor: '#5cbdaa',
+                lineColor: '#5cbdaa'
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="header_section">
+    <span id="music_player_title" >随心音乐FM</span>
+    <div class="user-center">
+        <i class="fa fa-user-o fa-2x" id="user-center-img"  aria-hidden="true"></i>
+        <a href="">个人中心</a>
+    </div>
+    <a href="login.html" onclick="onLogOff()">退出登录</a>
+    <div class="search-box" id="search-area">
+        <input type="text" class="search-input" name="wd" id="search-wd" placeholder="搜索歌手、歌名">
+        <img src="">
+    </div>
+</div>
+
+<div class="div_space"></div>
+
+<div class="myplayer">
+    <div id="t_wrapper">
+        <div id="t_cover">
+            <img src="../Images/logo.png">
+        </div>
+        <div id="t_top">
+            <div id="t_title_info">
+                <span class="artist"></span>
+                <span class="title"></span>
+            </div>
+        </div>
+        <div id="t_middle">
+            <div id="play"></div>
+            <div id="pause" class="hidden">
+            </div>
+            <div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="t_progress">
+                <div id="trackInfo">
+                    <div id="error">
+                    </div>
+                    <div id="current">0:00</div>
+                    <div id="duration">0:00</div>
+                </div>
+                <div style="width: 0%;" class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+                <span style="left: 0%;" class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+            </div>
+            <span id="prev"></span>
+            <span id="next"></span>
+        </div>
+        <div id="t_bottom">
+            <div id="extra_function">
+                <i class="fa fa-heart" id="heart_button" aria-hidden="true"></i>
+                <i class="fa fa-trash" id="rubbish_button" aria-hidden="true"></i>
+            </div>
+            <div id="range">
+                <div id="val"></div>
+                <div id="vol"></div>
+                <div id="rangeVal"></div>
+            </div>
+            <div id="t_pls_show" class="noselectpls"></div>
+        </div>
+    </div>
+    <div id="playlist">
+        <ul>
+            <li class="history_list" t_cover="bianxingjingang.jpg" t_artist="变形金刚主题曲" t_name="Transformers">
+                <a href="#">变形金刚主题曲 – Transformers</a>
+                <audio preload="none">
+                    <source src="../Media/Transformers2.mp3" type="audio/mp3">
+                </audio>
+            </li>
+            <li class="history_list"t_cover="dengziqi.jpg" t_artist="邓紫棋" t_name="喜欢你">
+                <a href="#">邓紫棋 – 喜欢你</a>
+                <audio preload="none">
+                    <source src="http://sc1.111ttt.com/2014/1/09/12/2121908298.mp3" type="audio/mp3">
+                </audio>
+            </li>
+            <li class="history_list" t_cover="zhoujielun.jpg" t_artist="梁博" t_name="男孩">
+                <a href="#">梁博 – 男孩</a>
+                <audio preload="none">
+                    <source src="../Media/梁博%20-%20男孩%20(Live).mp3" type="audio/mp3">
+                </audio>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

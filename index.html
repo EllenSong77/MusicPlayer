@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>爱播网,jquery+html5简洁列表音乐播放器,jquery开发的网页音乐播放器</title>
+    <meta name="keywords" content="jquery+html5简洁列表,html5音乐播放器,html5音频播放器,音乐mp3播放器" />
+<meta name="description" content="html5音乐播放器,jquery+html5简洁列表播放器jquery开发" />
+    <link rel="stylesheet" type="text/css" href="Css/tplayer.css" />
+    <link rel="stylesheet" type="text/css" href="Plugins/FontAwesome4.1/css/font-awesome.min.css" />
+    <script src="Js/jquery.js"></script>
+    <script src="Js/jquery-ui.js"></script>
+    <script src="Js/tPlayer.js"></script>
+</head>
+<body>
+
+<div class="myplayer">
+	<!-- 代码 开始 -->
+    <div id="t_wrapper">
+        <div id="t_cover">
+        	<img src="Images/logo.png">
+        </div>
+    	<div id="t_top">
+    		<div id="t_title_info">
+    			<span class="artist"></span>
+    			<span class="title"></span>
+    		</div>
+    	</div>
+    	<div id="t_middle">
+    		<div id="play"></div>
+    		<div id="pause" class="hidden">
+    		</div>
+    		<div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="t_progress">
+                <div id="trackInfo">
+                    <div id="error">
+    				</div>
+                    <div id="current">0:00</div>
+                    <div id="duration">0:00</div>
+    			</div>
+    			<div style="width: 0%;" class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+            	<span style="left: 0%;" class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+            </div>
+    		<span id="prev"></span>
+            <span id="next"></span>
+    	</div>
+    	<div id="t_bottom">
+            <div id="range">
+                <div id="val"></div>
+                <div id="vol"></div>
+                <div id="rangeVal"></div>
+            </div>
+            <div id="t_pls_show" class="noselectpls"></div>
+    	</div>
+    </div>
+    <div id="playlist">
+		<ul>
+			<li t_cover="bianxingjingang.jpg" t_artist="变形金刚主题曲" t_name="Transformers"> 
+				<a href="#">变形金刚主题曲 – Transformers</a>
+				<audio preload="none">
+					<source src="Media/Transformers.mp3" type="audio/mp3">
+					<source src="http://www.datouwang.com/" type="audio/ogg; codecs=vorbis">
+				</audio>
+			</li>
+			<li t_cover="dengziqi.jpg" t_artist="邓紫棋" t_name="喜欢你">
+				<a href="#">邓紫棋 – 喜欢你</a>
+				<audio preload="none">
+					<source src="http://sc1.111ttt.com/2014/1/09/12/2121908298.mp3" type="audio/mp3">
+					<source src="http://www.datouwang.com/" type="audio/ogg; codecs=vorbis">
+				</audio>
+			</li>
+			<li t_cover="zhoujielun.jpg" t_artist="周杰伦" t_name="最长的电影">
+				<a href="#">周杰伦 – 最长的电影</a>
+				<audio preload="none">
+					<source src="http://sc.111ttt.com/up/mp3/21567/82A1E2ED54A07B173CDEAFD38DF63C4F.mp3" type="audio/mp3">
+					<source src="http://www.datouwang.com/" type="audio/ogg; codecs=vorbis">
+				</audio>
+			</li>
+			<li t_cover="dengziqi.jpg" t_artist="男生版" t_name="泡沫">
+				<a href="#">男生版 – 泡沫</a>
+				<audio preload="none">
+					<source src="http://sc.111ttt.com/up/mp3/325955/BEBEB47B017439208D11F62558E9A9D1.mp3" type="audio/mp3">
+					<source src="http://www.datouwang.com/" type="audio/ogg; codecs=vorbis">
+				</audio>
+			</li>
+			<li t_cover="taozhe.jpg" t_artist="陶喆" t_name="爱我还说他">
+				<a href="#">陶喆 – 爱我还说他</a>
+				<audio preload="none">
+					<source src="http://sc.111ttt.com/up/mp3/75773/A444FCBC6F3003067D83C5CD83DB191B.mp3" type="audio/mp3">
+					<source src="http://www.datouwang.com/" type="audio/ogg; codecs=vorbis">
+				</audio>
+			</li>
+		</ul>
+    </div>
+	<!-- 代码 结束 -->
+</div>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>,<strong>jquery+html5简洁列表音乐播放器</strong> 来源：<a href="http://www.52player.com/" target="_blank" style="color:#ffffff;">爱播网52player.com</a></p>
+<p>转载请注明出处，此代码仅供学习交流，请勿用于商业用途。</p>
+ <strong>其他格式播放器下载</strong> 
+<a href="http://www.52player.com/tags.php?/f4v%CD%F8%D2%B3%B2%A5%B7%C5%C6%F7/" target="_blank" style="color:#ffffff;">f4v网页播放器</a>  
+<a href="http://www.52player.com/tags.php?/flv%CD%F8%D2%B3%B2%A5%B7%C5%C6%F7/" target="_blank" style="color:#ffffff;">flv网页播放器</a>  
+<a href="http://www.52player.com/tags.php?/mp4%CD%F8%D2%B3%B2%A5%B7%C5%C6%F7/" target="_blank" style="color:#ffffff;">mp4网页播放器</a>  
+<a href="http://www.52player.com/tags.php?/mov%CD%F8%D2%B3%B2%A5%B7%C5%C6%F7/" target="_blank" style="color:#ffffff;">mov网页播放器</a>  
+<a href="http://www.52player.com/tags.php?/3gp%CD%F8%D2%B3%B2%A5%B7%C5%C6%F7/" target="_blank" style="color:#ffffff;">3gp网页播放器</a>  
+<a href="http://www.52player.com/tags.php?/mp3%D2%F4%C0%D6%B2%A5%B7%C5%C6%F7/" target="_blank" style="color:#ffffff;">mp3音乐播放器</a>  
+<a href="http://www.52player.com/tags.php?/wma%D2%F4%C0%D6%B2%A5%B7%C5%C6%F7/" target="_blank" style="color:#ffffff;">wma音乐播放器</a>  
+<a href="http://www.52player.com/tags.php?/%B9%E3%B8%E6%B9%A6%C4%DC%B2%A5%B7%C5%C6%F7/" target="_blank" style="color:#ffffff;">广告功能播放器</a>  
+<a href="http://www.52player.com/tags.php?/%BF%E7%D6%D5%B6%CB%B2%A5%B7%C5/" target="_blank" style="color:#ffffff;">支持微信播放器</a>  
+<p></center></p>
+</div>
+
+</body>
+</html>

@@ -1519,6 +1519,17 @@ header .rt_nav li .quit_icon:before {
     margin: 0 1.25em 0 13.75em;
 }
 
+#extra_function {
+    float: left;
+    width: 50%;
+    margin-top: 50px;
+}
+
+#extra_function i{
+    float: left;
+    margin-left: 20px;
+}
+
 #range {
     position: absolute;
     bottom: 1.25em;
@@ -1692,4 +1703,15 @@ header .rt_nav li .quit_icon:before {
     left: -25px;
     top: 12px;
 
+}
+
+
+
+/*----------------------------Recommendation List-------------------------------*/
+
+#recommendation_list {
+    margin: 100px auto 0 auto;
+    width: 80%;
+    height: 500px;
+    border: solid;
 }

@@ -6,9 +6,11 @@
     <title>随心音乐FM</title>
     <link rel="stylesheet" type="text/css" href="../Css/style.css" />
     <link rel="stylesheet" type="text/css" href="../Css/font-awesome.css" />
+    <link rel="stylesheet" href="../Css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="../Plugins/FontAwesome4.1/css/font-awesome.min.css" />
     <script type='text/javascript' src='../Js/jquery-3.2.0.js'></script>
     <script type='text/javascript' src='../Js/jquery.particleground.js'></script>
+    <script type='text/javascript' src='../Js/bootstrap.js'></script>
     <script src="../Js/jquery-ui.js"></script>
     <script src="../Js/tPlayer.js"></script>
     <style>
@@ -50,6 +52,7 @@
 
 <div class="div_space"></div>
 
+<div class="scroll_section">
 <div class="myplayer">
     <div id="t_wrapper">
         <div id="t_cover">
@@ -116,16 +119,98 @@
 </div>
 
 <div id="recommendation_list">
-    <div id="normal_recommendation" class="recommendation_banner">
-        <span class="banner_title" title="推荐列表"></span>
+    <div class="tab song_list_title">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <span><i class="fa fa-thumbs-o-up" id="normal_recommendation" aria-hidden="true"></i>推荐列表</span>
+            </li>
+            <li role="presentation" class="active">
+                <span><i class="fa fa-smile-o" id="relative_recommendation" aria-hidden="true"></i>猜你喜欢</span>
+            </li>
+            <li role="presentation" class="active">
+                <span><i class="fa fa-heart" id="red_heart_list" aria-hidden="true"></i>红心列表</span>
+            </li>
+        </ul>
+    </div>
+    <!--<div class="song_list_title">-->
+        <!--<span><i class="fa fa-thumbs-o-up" id="normal_recommendation" aria-hidden="true"></i>推荐列表</span>-->
+        <!--<span><i class="fa fa-smile-o" id="relative_recommendation" aria-hidden="true"></i>猜你喜欢</span>-->
+        <!--<span><i class="fa fa-heart" id="red_heart_list" aria-hidden="true"></i>红心列表</span>-->
+    <!--</div>-->
+    <ul>
+        <li class="recommandation_item" id="rec_item_01">
+            <img class="recommendation_cover">
+            <div>
+                <a class="song_name">AAA</a>
+                <p class="song_singer">AAA</p>
+            </div>
+        </li>
+        <li class="recommandation_item" id="rec_item_02">
+            <img class="recommendation_cover">
+            <div>
+                <a class="song_name">AAA</a>
+                <p class="song_singer">AAA</p>
+            </div>
+        </li>
+        <li class="recommandation_item" id="rec_item_03">
+            <img class="recommendation_cover">
+            <div>
+                <a class="song_name">AAA</a>
+                <p class="song_singer">AAA</p>
+            </div>
+        </li>
+        <li class="recommandation_item" id="rec_item_04">
+            <img class="recommendation_cover">
+            <div>
+                <a class="song_name">AAA</a>
+                <p class="song_singer">AAA</p>
+            </div>
+        </li>
+        <li class="recommandation_item" id="rec_item_05">
+            <img class="recommendation_cover">
+            <div>
+                <a class="song_name">AAA</a>
+                <p class="song_singer">AAA</p>
+            </div>
+        </li>
+        <li class="recommandation_item" id="rec_item_06">
+            <img class="recommendation_cover">
+            <div>
+                <a class="song_name">AAA</a>
+                <p class="song_singer">AAA</p>
+            </div>
+        </li>
+        <li class="recommandation_item" id="rec_item_07">
+            <img class="recommendation_cover">
+            <div>
+                <a class="song_name">AAA</a>
+                <p class="song_singer">AAA</p>
+            </div>
+        </li>
+        <li class="recommandation_item" id="rec_item_08">
+            <img class="recommendation_cover">
+            <div>
+                <a class="song_name">AAA</a>
+                <p class="song_singer">AAA</p>
+            </div>
+        </li>
+        <li class="recommandation_item" id="rec_item_09">
+            <img class="recommendation_cover">
+            <div>
+                <a class="song_name">AAA</a>
+                <p class="song_singer">AAA</p>
+            </div>
+        </li>
+        <li class="recommandation_item" id="rec_item_10">
+            <img class="recommendation_cover">
+            <div>
+                <a class="song_name">AAA</a>
+                <p class="song_singer">AAA</p>
+            </div>
+        </li>
 
-    </div>
-    <div id="relative_recommendation" class="recommendation_banner">
-        <span class="banner_title" title="猜你喜欢"></span>
-    </div>
-    <div id="red_heart_list" class="recommendation_banner">
-        <span class="banner_title" title="红心列表"></span>
-    </div>
+    </ul>
+</div>
 </div>
 
 </body>

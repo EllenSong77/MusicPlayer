@@ -1,7 +1,5 @@
 @charset "UTF-8";
-html {
-    overflow-y: hidden;
-}
+
 
 body {
     margin: 0;
@@ -10,6 +8,11 @@ body {
     font-size: .28em;
     color: #333;
     background-color: white;
+    overflow: auto!important;
+}
+
+.scroll_section {
+
 }
 
 a:active, a:hover {
@@ -247,7 +250,7 @@ small, weak {
 }
 
 .admin_login dt {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
     color: #45bda6;
@@ -384,6 +387,10 @@ small, weak {
     font-size: 12px;
     text-align: center;
     margin: 5px 0;
+}
+
+.admin_login dd a {
+    color: #fff;
 }
 
 .code {
@@ -1720,7 +1727,7 @@ header .rt_nav li .quit_icon:before {
     column-count: 2;
     color: #fff;
     font-family: 'adminthemesregular';
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .user_register dd{
@@ -1733,6 +1740,75 @@ header .rt_nav li .quit_icon:before {
 #recommendation_list {
     margin: 100px auto 0 auto;
     width: 80%;
-    height: 500px;
-    border: solid;
+    height: auto;
 }
+
+.song_list_title span{
+    float: left;
+    color: #fff;
+    margin-left: 17%;
+}
+
+.song_list_title i{
+    margin-right: 10px;
+}
+
+#normal_recommendation {
+    color: #fff;
+}
+
+#relative_recommendation {
+    color: #fff;
+}
+
+#red_heart_list {
+    color: #FF2C56;
+}
+
+.song_list_title {
+    height: 50px;
+    font-size: 28px;
+    line-height:50px;
+}
+
+.recommandation_item {
+    width: 20%;
+    height: auto;
+    list-style: none;
+    display: block;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.recommendation_cover {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+
+.recommandation_item a {
+    color: #fff;
+    width: 100%;
+    margin-top: 15px;
+    float: left;
+    text-align: center;
+}
+
+.recommandation_item p {
+    color: #fff;
+    width: 100%;
+    margin-top: 15px;
+    float: left;
+    text-align: center;
+}
+
+
+/*.song_list_title i{*/
+    /*height: 24px;*/
+/*}*/
+
+
+
+

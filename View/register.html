@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>随心音乐FM</title>
+    <script type='text/javascript' src='../Js/jquery-3.2.0.js'></script>
+    <script type='text/javascript' src='../Js/jquery.particleground.js'></script>
+    <link rel="stylesheet" href="../Css/style.css"/>
+    <script type='text/javascript' src='register.js'></script>
+    <style>
+        body {
+            height: 100%;
+            background: #16a085;
+            overflow: hidden;
+        }
+
+        canvas {
+            z-index: -1;
+            position: absolute;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            //粒子背景特效
+            $('body').particleground({
+                dotColor: '#5cbdaa',
+                lineColor: '#5cbdaa'
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+
+<div class="header_section">
+    <span id="music_player_title" >随心音乐FM</span>
+</div>
+<div class="div_space"></div>
+
+<div class="user_register">
+    <!--<form action="/Home/Login/index.shtml" method="post">-->
+    <dd>用户名：<input  type="text" name="user_name" /></dd>
+    <dd>昵称：<input  type="text" name="nick_name" /></dd>
+    <dd>个人简介：<input  type="text" name="user_description" /></dd>
+    <dd>密码：<input  type="password" name="user_password" /></dd>
+    <dd>确认密码：<input  type="password" name="confirm_password" /></dd>
+    <dd>邮箱：<input  type="text" name="user_email" /></dd>
+    <dd>手机：<input  type="text" name="user_phone" /></dd>
+    <dd>年龄：<input  type="text" name="user_age" /></dd>
+    <dd>生日：<input  type="text" name="user_birth" /></dd>
+    <dd>性别：<input  type="radio" name="user_gender" value="0" checked />女<input  type="radio" name="user_gender" value="1" />男</dd>
+</div>
+
+</body>
+</html>

@@ -1,3 +1,33 @@
+
+var history_list;
+
+$(function(){
+    $.ajax({
+        type: "GET",
+        url: "../Model/Music.json",
+        dataType: "json",
+        success: function(data){
+            history_list = data;
+            var count = 1;
+            for( var i in history_list ){
+                var id = "history_item_"+count;
+                var $li = $("<li></li>");
+                var $a = $("<a>");
+                var $audio = $("<source>");
+                $li.attr({"id":id, "class":"history_list", "t_name":history_list[i].name,
+                    "t_artist":history_list[i].artist, "t_cover":history_list[i].cover});
+                $a.attr({href:"#"}).text(history_list[i].name + " - " + history_list[i].artist);
+                $audio.attr({preload:"none",source:history_list[i].url,type:"audio/mp3"});
+                $li.append($a);
+                $li.append($audio);
+                $("#playlist ul").append($li);
+                count++;
+
+            }
+        }
+    });
+})
+
 var styleChange = {pause: {}, play: {}, plsbutton: {}};
 
 styleChange.play.change = function () {

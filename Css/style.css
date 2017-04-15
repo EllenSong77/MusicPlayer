@@ -1425,7 +1425,7 @@ header .rt_nav li .quit_icon:before {
     width: calc(100% - 7.5em);
     height: 1.25em;
     float: left;
-    background: #555;
+    background: #fff;
     cursor: pointer;
 }
 
@@ -1450,14 +1450,14 @@ header .rt_nav li .quit_icon:before {
 #current {
     position: absolute;
     left: 0.3125em;
-    color: #fff;
+    color: #555;
     z-index: 5;
 }
 
 #duration {
     position: absolute;
     right: 0.3125em;
-    color: #fff;
+    color: #555;
     z-index: 5;
 }
 
@@ -1743,10 +1743,13 @@ header .rt_nav li .quit_icon:before {
     height: auto;
 }
 
-.song_list_title span{
+.song_list_title a{
+    width: 30%;
+    text-align: center;
+    font-size: 20px;
     float: left;
     color: #fff;
-    margin-left: 17%;
+    margin-left: 30%;
 }
 
 .song_list_title i{
@@ -1804,7 +1807,76 @@ header .rt_nav li .quit_icon:before {
     text-align: center;
 }
 
+a:hover,a:focus{
+    outline: none;
+    text-decoration: none;
+}
+.tab .nav-tabs li{
+    margin: 0;
+    width: 33.33%;
+}
+.tab .nav-tabs li a{
+    font-size: 14px;
+    color: #999898;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+}
+.tab .nav-tabs li a:hover{
+    border-top: none;
+    border-bottom: none;
+    border-right-color: #ddd;
+    background: #67c1a5;
+}
+.tab .nav-tabs li.active a,
+.tab .nav-tabs li.active a:hover{
+    border: none;
+    background: #67c1a5;
+}
+.tab .nav-tabs li.active a:before{
+    width: 58%;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.tab .nav-tabs li.active a:after{
+    border-top: 10px solid #1fc1dd;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 43%;
+}
+.tab .tab-content{
+    font-size: 13px;
+    color: #999898;
+    line-height: 25px;
+    padding: 20px;
+    border-top: none;
+}
+.tab-content , .tab-pane {
+    display: none!important;
+}
 
+.tab-content , .active {
+    display: block!important;
+}
+@media only screen and (max-width: 480px){
+    .tab .nav-tabs li{
+        width: 100%;
+        text-align: center;
+    }
+    .tab .nav-tabs li.active a,
+    .tab .nav-tabs li.active a:after,
+    .tab .nav-tabs li.active a:hover{
+        border: none;
+    }
+}
 /*.song_list_title i{*/
     /*height: 24px;*/
 /*}*/

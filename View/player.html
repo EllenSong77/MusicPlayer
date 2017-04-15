@@ -102,18 +102,7 @@
                     <source src="../Media/Transformers2.mp3" type="audio/mp3">
                 </audio>
             </li>
-            <li class="history_list"t_cover="dengziqi.jpg" t_artist="邓紫棋" t_name="喜欢你">
-                <a href="#">邓紫棋 – 喜欢你</a>
-                <audio preload="none">
-                    <source src="http://sc1.111ttt.com/2014/1/09/12/2121908298.mp3" type="audio/mp3">
-                </audio>
-            </li>
-            <li class="history_list" t_cover="zhoujielun.jpg" t_artist="梁博" t_name="男孩">
-                <a href="#">梁博 – 男孩</a>
-                <audio preload="none">
-                    <source src="../Media/梁博%20-%20男孩%20(Live).mp3" type="audio/mp3">
-                </audio>
-            </li>
+
         </ul>
     </div>
 </div>
@@ -122,13 +111,19 @@
     <div class="tab song_list_title">
         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active">
-                <span><i class="fa fa-thumbs-o-up" id="normal_recommendation" aria-hidden="true"></i>推荐列表</span>
+                <a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">
+                    <i class="fa fa-thumbs-o-up" id="normal_recommendation" aria-hidden="true"></i>推荐列表
+                </a>
             </li>
-            <li role="presentation" class="active">
-                <span><i class="fa fa-smile-o" id="relative_recommendation" aria-hidden="true"></i>猜你喜欢</span>
+            <li role="presentation">
+                <a href="#Section2" aria-controls="home" role="tab" data-toggle="tab">
+                    <span><i class="fa fa-smile-o" id="relative_recommendation" aria-hidden="true"></i>猜你喜欢</span>
+                </a>
             </li>
-            <li role="presentation" class="active">
-                <span><i class="fa fa-heart" id="red_heart_list" aria-hidden="true"></i>红心列表</span>
+            <li role="presentation">
+                <a href="#Section3" aria-controls="home" role="tab" data-toggle="tab">
+                    <span><i class="fa fa-heart" id="red_heart_list" aria-hidden="true"></i>红心列表</span>
+                </a>
             </li>
         </ul>
     </div>
@@ -137,79 +132,232 @@
         <!--<span><i class="fa fa-smile-o" id="relative_recommendation" aria-hidden="true"></i>猜你喜欢</span>-->
         <!--<span><i class="fa fa-heart" id="red_heart_list" aria-hidden="true"></i>红心列表</span>-->
     <!--</div>-->
-    <ul>
-        <li class="recommandation_item" id="rec_item_01">
-            <img class="recommendation_cover">
-            <div>
-                <a class="song_name">AAA</a>
-                <p class="song_singer">AAA</p>
-            </div>
-        </li>
-        <li class="recommandation_item" id="rec_item_02">
-            <img class="recommendation_cover">
-            <div>
-                <a class="song_name">AAA</a>
-                <p class="song_singer">AAA</p>
-            </div>
-        </li>
-        <li class="recommandation_item" id="rec_item_03">
-            <img class="recommendation_cover">
-            <div>
-                <a class="song_name">AAA</a>
-                <p class="song_singer">AAA</p>
-            </div>
-        </li>
-        <li class="recommandation_item" id="rec_item_04">
-            <img class="recommendation_cover">
-            <div>
-                <a class="song_name">AAA</a>
-                <p class="song_singer">AAA</p>
-            </div>
-        </li>
-        <li class="recommandation_item" id="rec_item_05">
-            <img class="recommendation_cover">
-            <div>
-                <a class="song_name">AAA</a>
-                <p class="song_singer">AAA</p>
-            </div>
-        </li>
-        <li class="recommandation_item" id="rec_item_06">
-            <img class="recommendation_cover">
-            <div>
-                <a class="song_name">AAA</a>
-                <p class="song_singer">AAA</p>
-            </div>
-        </li>
-        <li class="recommandation_item" id="rec_item_07">
-            <img class="recommendation_cover">
-            <div>
-                <a class="song_name">AAA</a>
-                <p class="song_singer">AAA</p>
-            </div>
-        </li>
-        <li class="recommandation_item" id="rec_item_08">
-            <img class="recommendation_cover">
-            <div>
-                <a class="song_name">AAA</a>
-                <p class="song_singer">AAA</p>
-            </div>
-        </li>
-        <li class="recommandation_item" id="rec_item_09">
-            <img class="recommendation_cover">
-            <div>
-                <a class="song_name">AAA</a>
-                <p class="song_singer">AAA</p>
-            </div>
-        </li>
-        <li class="recommandation_item" id="rec_item_10">
-            <img class="recommendation_cover">
-            <div>
-                <a class="song_name">AAA</a>
-                <p class="song_singer">AAA</p>
-            </div>
-        </li>
+    <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+        <ul>
+            <li class="recommandation_item" id="rec_item_01">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_02">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_03">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_04">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_05">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_06">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_07">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_08">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_09">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_10">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
 
-    </ul>
+        </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="Section2">
+        <ul>
+            <li class="recommandation_item" id="rec_item_01">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_02">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_03">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_04">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_05">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_06">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_07">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_08">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_09">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_10">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="Section3">
+        <ul>
+            <li class="recommandation_item" id="rec_item_01">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_02">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_03">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_04">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_05">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_06">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_07">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_08">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_09">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+            <li class="recommandation_item" id="rec_item_10">
+                <img class="recommendation_cover">
+                <div>
+                    <a class="song_name">AAA</a>
+                    <p class="song_singer">AAA</p>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
 </div>
 </div>
 

@@ -256,9 +256,11 @@ $(document).ready(function () {
     $('#t_progress').slider({
         start: function (event, ui) {
             mus[0].pause();
+            console.log(mus[0])
         },
         stop: function (event, ui) {
             prog = ui.value;
+            console.log(prog);
             mus[0].currentTime = prog;
             mus[0].play();
             styleChange.play.change();

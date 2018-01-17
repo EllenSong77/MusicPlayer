@@ -1302,6 +1302,8 @@ header .rt_nav li .quit_icon:before {
 }
 
 #t_cover img {
+    width: 100%;
+    height: 100%;
     position: relative;
     -webkit-border-radius:50%;
     -moz-border-radius:50%;

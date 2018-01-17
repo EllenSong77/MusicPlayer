@@ -50,55 +50,57 @@ function validate () {
     }
 
     if (username != '' && password != ''){
-        var inputCode = document.getElementById("J_codetext").value.toUpperCase();
-        var codeToUp=code.toUpperCase();
-        if(inputCode.length <=0) {
-            document.getElementById("J_codetext").setAttribute("placeholder","输入验证码");
-            alert("验证码错误！");
-            createCode();
-            return false;
-        }
-        else if(inputCode != codeToUp ){
-            document.getElementById("J_codetext").value="";
-            document.getElementById("J_codetext").setAttribute("placeholder","验证码错误");
-            alert("验证码错误！");
-            createCode();
-            return false;
-        }
-        else if(username == "admin" && password == "admin"){
-            //ajax提交表单：
-            // ajaxSubmit("/Home/Login/index","POST",function(data){
-            //     if (data.status == 1) {
-            //         showInfo(data.info,1);
-            //
-            //     }else {
-            //         showInfo(data.info,2);
-            //         //刷新验证码
-            //         $("#captcha").val("");
-            //
-            //         $("#captchaImg").attr("src", "/Home/Login/captcha/" + Math.random());
-            //
-            //     }
-            //     if (data.url && data.url != '') {
-            //         setTimeout(function () {
-            //             top.window.location.href = data.url;
-            //         }, 2000);
-            //     }
-            // });
-            // e.preventDefault();
-
-            alert("登录成功！");
-
-            // window.open(document.getElementById("J_down").getAttribute("data-link"));
-            // document.getElementById("J_codetext").value="";
-            // createCode();
-            window.location.href="player.html?backurl="+window.location.href;
-            return true;
-        }
-        else {
-            alert("填写信息有误！");
-            return false;
-        }
+        window.location.href="player.html?backurl="+window.location.href;
+        return true;
+        // var inputCode = document.getElementById("J_codetext").value.toUpperCase();
+        // var codeToUp=code.toUpperCase();
+        // if(inputCode.length <=0) {
+        //     document.getElementById("J_codetext").setAttribute("placeholder","输入验证码");
+        //     alert("验证码错误！");
+        //     createCode();
+        //     return false;
+        // }
+        // else if(inputCode != codeToUp ){
+        //     document.getElementById("J_codetext").value="";
+        //     document.getElementById("J_codetext").setAttribute("placeholder","验证码错误");
+        //     alert("验证码错误！");
+        //     createCode();
+        //     return false;
+        // }
+        // else if(username == "admin" && password == "admin"){
+        //     //ajax提交表单：
+        //     // ajaxSubmit("/Home/Login/index","POST",function(data){
+        //     //     if (data.status == 1) {
+        //     //         showInfo(data.info,1);
+        //     //
+        //     //     }else {
+        //     //         showInfo(data.info,2);
+        //     //         //刷新验证码
+        //     //         $("#captcha").val("");
+        //     //
+        //     //         $("#captchaImg").attr("src", "/Home/Login/captcha/" + Math.random());
+        //     //
+        //     //     }
+        //     //     if (data.url && data.url != '') {
+        //     //         setTimeout(function () {
+        //     //             top.window.location.href = data.url;
+        //     //         }, 2000);
+        //     //     }
+        //     // });
+        //     // e.preventDefault();
+        //
+        //     alert("登录成功！");
+        //
+        //     // window.open(document.getElementById("J_down").getAttribute("data-link"));
+        //     // document.getElementById("J_codetext").value="";
+        //     // createCode();
+        //     window.location.href="player.html?backurl="+window.location.href;
+        //     return true;
+        // }
+        // else {
+        //     alert("填写信息有误！");
+        //     return false;
+        // }
     }
 
 
